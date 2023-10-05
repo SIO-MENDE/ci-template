@@ -3,13 +3,9 @@
 namespace App\Controllers;
 
 class Home extends BaseController
-{    
-    public function index()
+{
+    public function index(): string
     {
-        return view('template/header')
-             . view('template/menu')
-             . view('home')
-             . view('template/footer');        
+        return view('welcome_message');
     }
-    
 }
